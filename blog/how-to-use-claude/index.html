@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
+        <meta name="description" content="Draft guide on using Claude">
       
       
         <meta name="author" content="Giacinto Paolo Saggese">
       
       
-        <link rel="canonical" href="https://gpsaggese.github.io/blog/welcome-to-our-blog/">
+        <link rel="canonical" href="https://gpsaggese.github.io/blog/how-to-use-claude/">
       
       
-        <link rel="prev" href="../google-workspace-cli/">
+        <link rel="prev" href="../vs-code-and-containers/">
       
       
-        <link rel="next" href="../probabilistic-time-series-forecasting-with-gluonts-predicting-covid-19-cases/">
+        <link rel="next" href="../google-workspace-cli/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Welcome to Our Blog - GP's AI Research</title>
+        <title>How to Use Claude - GP's AI Research</title>
       
     
     
@@ -88,17 +88,17 @@
   
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Welcome to Our Blog">
-  <meta property="og:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
-  <meta property="og:url" content="https://gpsaggese.github.io/blog/welcome-to-our-blog/">
+  <meta property="og:title" content="How to Use Claude">
+  <meta property="og:description" content="Draft guide on using Claude">
+  <meta property="og:url" content="https://gpsaggese.github.io/blog/how-to-use-claude/">
   <meta property="og:type" content="website">
 
   
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Welcome to Our Blog">
-  <meta name="twitter:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
+  <meta name="twitter:title" content="How to Use Claude">
+  <meta name="twitter:description" content="Draft guide on using Claude">
   
 
   </head>
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what_to_expect" class="md-skip">
+        <a href="#developer_guide" class="md-skip">
           Skip to content
         </a>
       
@@ -155,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Our Blog
+              How to Use Claude
             
           </span>
         </div>
@@ -716,7 +716,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-02-06 00:00:00+00:00" class="md-ellipsis">Friday, February 6, 2026</time>
+                        <time datetime="2026-01-01 00:00:00+00:00" class="md-ellipsis">Thursday, January 1, 2026</time>
                       </div>
                     </li>
                     
@@ -727,7 +727,6 @@
                           <span class="md-ellipsis">
                             in
                             
-                              <a href="../category/AI-Research/">AI Research</a>, 
                               <a href="../category/Software-Engineering/">Software Engineering</a></span>
                         </div>
                       </li>
@@ -739,7 +738,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              2 min read
+                              1 min read
                             
                           </span>
                         </div>
@@ -766,10 +765,347 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what_to_expect" class="md-nav__link">
+  <a href="#developer_guide" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What to Expect
+        Developer Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#models_pricing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Models &amp; Pricing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build_with_claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build with Claude
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build with Claude">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompting_best_practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompting best practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimize_parallel_tool_calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimize parallel tool calling
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model_capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Capabilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended_thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extended thinking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptive_thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adaptive thinking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast_mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fast mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure_outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming_messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming messages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch_processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batch processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf_support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PDF support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search_results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multilingual_support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multilingual support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embeddings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool_infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context_management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files_assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files &amp; Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent_skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent_sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt_engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt Engineering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strengthen_guardrails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strengthen Guardrails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin_and_monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin and Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api_reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API reference
       
     </span>
   </a>
@@ -777,10 +1113,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my_background" class="md-nav__link">
+  <a href="#mcp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Background
+        MCP
       
     </span>
   </a>
@@ -788,10 +1124,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why_this_blog" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Blog
+        Resources
       
     </span>
   </a>
@@ -799,21 +1135,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#topics_covered" class="md-nav__link">
+  <a href="#release_notes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Topics Covered
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get_in_touch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get in Touch
+        Release Notes
       
     </span>
   </a>
@@ -835,63 +1160,99 @@
 
 
 
-  <h1>Welcome to Our Blog</h1>
+  <h1>How to Use Claude</h1>
 
-<p>TL;DR: Welcome to our new blog where we'll share insights on AI research,
-machine learning, software engineering, and our experiences in academia and
-industry.</p>
-<!-- more -->
-
-<p>We're excited to launch this blog as a platform to share our thoughts, research
-findings, and experiences in artificial intelligence and software engineering.
-As researchers and practitioners, we've had the opportunity to work on
-challenging problems in machine learning, causal inference, and time series
-analysis.</p>
-<h3 id="what_to_expect">What to Expect<a class="headerlink" href="#what_to_expect" title="Permanent link">#</a></h3>
-<p>This blog will cover a range of topics including:</p>
+<p>// https://platform.claude.com/docs/en/home</p>
+<h2 id="developer_guide">Developer Guide<a class="headerlink" href="#developer_guide" title="Permanent link">#</a></h2>
+<h3 id="models_pricing">Models &amp; Pricing<a class="headerlink" href="#models_pricing" title="Permanent link">#</a></h3>
+<h3 id="build_with_claude">Build with Claude<a class="headerlink" href="#build_with_claude" title="Permanent link">#</a></h3>
+<h4 id="prompting_best_practices">Prompting best practices<a class="headerlink" href="#prompting_best_practices" title="Permanent link">#</a></h4>
 <ul>
-<li><strong>AI Research</strong>: Deep dives into machine learning algorithms, causal inference
-  methods, and time series forecasting</li>
-<li><strong>Software Engineering</strong>: Best practices, tools, and techniques for building
-  robust ML systems</li>
-<li><strong>Teaching</strong>: Insights from teaching courses on machine learning and AI</li>
-<li><strong>Startup Experience</strong>: Lessons learned from working on real-world AI
-  applications</li>
+<li>Use clear and explicit instructions</li>
+<li>Do not rely on the model to infer from vague prompts</li>
+<li>Think of C as a brilliant but new employee</li>
+<li>Be specific about output and constraints</li>
+<li>
+<p>Provide instructions as sequential steps</p>
+</li>
+<li>
+<p>Use examples</p>
+</li>
+<li>Aka few-shot prompting</li>
+<li>Create examples that are relevant and diverse</li>
+<li>Wrap examples in <code>&lt;examples&gt;</code> tags</li>
+<li>
+<p>You can ask C to evaluate examples and provide additional ones</p>
+</li>
+<li>
+<p>Use XML tags</p>
+</li>
+<li>XML tags help C not get confused with instructions, context, input</li>
+<li>
+<p>E.g.,
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;documents&gt;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;document index=1&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>...
+</code></pre></div></p>
+</li>
+<li>
+<p>Give C a role</p>
+</li>
+<li>
+<p>Use the system prompt to focus C's behavior and tone
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>You are a helpful coding assistant specializing in Python
+</code></pre></div></p>
+</li>
+<li>
+<p>When there are large docs</p>
+</li>
+<li>Put longform data at the top</li>
+<li>Put the query at the end</li>
+<li>Structure document with XML tags</li>
+<li>
+<p>Ask C to quote relevant parts of the documents first before carrying out its
+    tasks</p>
+</li>
+<li>
+<p>Control the format of responses</p>
+</li>
+<li>Tell C what to do and what not to do</li>
+<li>Use XML format indicators</li>
+<li>Match the prompt style to the desired output</li>
 </ul>
-<h3 id="my_background">My Background<a class="headerlink" href="#my_background" title="Permanent link">#</a></h3>
-<p>I'm an Adjunct Professor at the University of Maryland, teaching and conducting
-research in AI and machine learning. My research interests span causal
-inference, time series analysis, and applying machine learning to real-world
-problems. I also have extensive experience in software engineering, having
-worked on large-scale ML systems and open-source projects.</p>
-<h3 id="why_this_blog">Why This Blog<a class="headerlink" href="#why_this_blog" title="Permanent link">#</a></h3>
-<p>The goal of this blog is to share knowledge and insights that might be useful
-to:</p>
+<h4 id="tool_usage">Tool usage<a class="headerlink" href="#tool_usage" title="Permanent link">#</a></h4>
+<h4 id="optimize_parallel_tool_calling">Optimize parallel tool calling<a class="headerlink" href="#optimize_parallel_tool_calling" title="Permanent link">#</a></h4>
 <ul>
-<li><strong>Researchers</strong>: Looking for practical perspectives on implementing and
-  deploying ML models</li>
-<li><strong>Engineers</strong>: Interested in understanding the theory behind ML algorithms</li>
-<li><strong>Students</strong>: Learning about AI and software engineering</li>
-<li><strong>Practitioners</strong>: Applying ML in industry settings</li>
+<li>Run multiple speculative searches during research</li>
+<li>Read several files at once to build context faster</li>
 </ul>
-<h3 id="topics_covered">Topics Covered<a class="headerlink" href="#topics_covered" title="Permanent link">#</a></h3>
-<p>Some areas we plan to explore in upcoming posts:</p>
-<ul>
-<li>Causal inference methods and applications</li>
-<li>Time series forecasting techniques</li>
-<li>MLOps and deployment strategies</li>
-<li>Software engineering best practices for ML projects</li>
-<li>Lessons from teaching and mentoring</li>
-<li>Research insights and paper reviews</li>
-</ul>
-<h3 id="get_in_touch">Get in Touch<a class="headerlink" href="#get_in_touch" title="Permanent link">#</a></h3>
-<p>I'd love to hear from you! Feel free to reach out via:</p>
-<ul>
-<li>Email: <a href="mailto:gsaggese@umd.edu">gsaggese@umd.edu</a></li>
-<li>LinkedIn: <a href="https://linkedin.com/in/gpsaggese">linkedin.com/in/gpsaggese</a></li>
-<li>GitHub: <a href="https://github.com/gpsaggese">github.com/gpsaggese</a></li>
-</ul>
-<p>Stay tuned for upcoming posts from our team, and thank you for visiting!</p>
+<h3 id="model_capabilities">Model Capabilities<a class="headerlink" href="#model_capabilities" title="Permanent link">#</a></h3>
+<h4 id="extended_thinking">Extended thinking<a class="headerlink" href="#extended_thinking" title="Permanent link">#</a></h4>
+<h4 id="adaptive_thinking">Adaptive thinking<a class="headerlink" href="#adaptive_thinking" title="Permanent link">#</a></h4>
+<h4 id="effort">Effort<a class="headerlink" href="#effort" title="Permanent link">#</a></h4>
+<h4 id="fast_mode">Fast mode<a class="headerlink" href="#fast_mode" title="Permanent link">#</a></h4>
+<h4 id="structure_outputs">Structure outputs<a class="headerlink" href="#structure_outputs" title="Permanent link">#</a></h4>
+<h4 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">#</a></h4>
+<h4 id="streaming_messages">Streaming messages<a class="headerlink" href="#streaming_messages" title="Permanent link">#</a></h4>
+<h4 id="batch_processing">Batch processing<a class="headerlink" href="#batch_processing" title="Permanent link">#</a></h4>
+<h4 id="pdf_support">PDF support<a class="headerlink" href="#pdf_support" title="Permanent link">#</a></h4>
+<h4 id="search_results">Search results<a class="headerlink" href="#search_results" title="Permanent link">#</a></h4>
+<h4 id="multilingual_support">Multilingual support<a class="headerlink" href="#multilingual_support" title="Permanent link">#</a></h4>
+<h4 id="embeddings">Embeddings<a class="headerlink" href="#embeddings" title="Permanent link">#</a></h4>
+<h4 id="vision">Vision<a class="headerlink" href="#vision" title="Permanent link">#</a></h4>
+<h3 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">#</a></h3>
+<h3 id="tool_infrastructure">Tool Infrastructure<a class="headerlink" href="#tool_infrastructure" title="Permanent link">#</a></h3>
+<h3 id="context_management">Context Management<a class="headerlink" href="#context_management" title="Permanent link">#</a></h3>
+<h3 id="files_assets">Files &amp; Assets<a class="headerlink" href="#files_assets" title="Permanent link">#</a></h3>
+<h3 id="agent_skills">Agent Skills<a class="headerlink" href="#agent_skills" title="Permanent link">#</a></h3>
+<h3 id="agent_sdk">Agent SDK<a class="headerlink" href="#agent_sdk" title="Permanent link">#</a></h3>
+<h3 id="prompt_engineering">Prompt Engineering<a class="headerlink" href="#prompt_engineering" title="Permanent link">#</a></h3>
+<h3 id="strengthen_guardrails">Strengthen Guardrails<a class="headerlink" href="#strengthen_guardrails" title="Permanent link">#</a></h3>
+<h3 id="admin_and_monitoring">Admin and Monitoring<a class="headerlink" href="#admin_and_monitoring" title="Permanent link">#</a></h3>
+<h2 id="api_reference">API reference<a class="headerlink" href="#api_reference" title="Permanent link">#</a></h2>
+<h2 id="mcp">MCP<a class="headerlink" href="#mcp" title="Permanent link">#</a></h2>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">#</a></h2>
+<h2 id="release_notes">Release Notes<a class="headerlink" href="#release_notes" title="Permanent link">#</a></h2>
 
 
 
