@@ -12,29 +12,31 @@
         <meta name="author" content="Giacinto Paolo Saggese">
       
       
-        <link rel="canonical" href="https://gpsaggese.github.io/blog/">
+        <link rel="canonical" href="https://gpsaggese.github.io/blog/tensorflow-in-60-minutes/">
       
       
-        <link rel="prev" href="../07_coding/">
+        <link rel="prev" href="../python-package-tools-in-30-mins/">
       
+      
+        <link rel="next" href="../autogen-in-60-minutes/">
       
       
         
       
       
-      <link rel="icon" href="../assets/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Blog - GP's AI Research</title>
+        <title>TensorFlow in 60 Minutes - GP's AI Research</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +55,11 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../stylesheets/blog.css">
+      <link rel="stylesheet" href="../../stylesheets/blog.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -86,16 +88,16 @@
   
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Blog">
+  <meta property="og:title" content="TensorFlow in 60 Minutes">
   <meta property="og:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
-  <meta property="og:url" content="https://gpsaggese.github.io/blog/">
+  <meta property="og:url" content="https://gpsaggese.github.io/blog/tensorflow-in-60-minutes/">
   <meta property="og:type" content="website">
 
   
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog">
+  <meta name="twitter:title" content="TensorFlow in 60 Minutes">
   <meta name="twitter:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
   
 
@@ -118,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#tensorflow_in_30_seconds" class="md-skip">
           Skip to content
         </a>
       
@@ -134,9 +136,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="GP&#39;s AI Research" class="md-header__button md-logo" aria-label="GP's AI Research" data-md-component="logo">
+    <a href="../.." title="GP&#39;s AI Research" class="md-header__button md-logo" aria-label="GP's AI Research" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blog
+              TensorFlow in 60 Minutes
             
           </span>
         </div>
@@ -248,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -267,7 +269,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../02_cv/" class="md-tabs__link">
+      <a href="../../02_cv/" class="md-tabs__link">
         
   
   
@@ -286,7 +288,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../03_education/" class="md-tabs__link">
+      <a href="../../03_education/" class="md-tabs__link">
         
   
   
@@ -305,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../04_teaching/" class="md-tabs__link">
+      <a href="../../04_teaching/" class="md-tabs__link">
         
   
   
@@ -324,7 +326,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../05_publications/" class="md-tabs__link">
+      <a href="../../05_publications/" class="md-tabs__link">
         
   
   
@@ -343,7 +345,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../06_research/" class="md-tabs__link">
+      <a href="../../06_research/" class="md-tabs__link">
         
   
   
@@ -362,7 +364,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../07_coding/" class="md-tabs__link">
+      <a href="../../07_coding/" class="md-tabs__link">
         
   
   
@@ -383,7 +385,7 @@
   
   
     <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+      <a href="../" class="md-tabs__link">
         
   
   
@@ -413,7 +415,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -426,9 +430,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="GP&#39;s AI Research" class="md-nav__button md-logo" aria-label="GP's AI Research" data-md-component="logo">
+    <a href="../.." title="GP&#39;s AI Research" class="md-nav__button md-logo" aria-label="GP's AI Research" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     GP's AI Research
@@ -443,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -470,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_cv/" class="md-nav__link">
+      <a href="../../02_cv/" class="md-nav__link">
         
   
   
@@ -497,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_education/" class="md-nav__link">
+      <a href="../../03_education/" class="md-nav__link">
         
   
   
@@ -524,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_teaching/" class="md-nav__link">
+      <a href="../../04_teaching/" class="md-nav__link">
         
   
   
@@ -551,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_publications/" class="md-nav__link">
+      <a href="../../05_publications/" class="md-nav__link">
         
   
   
@@ -578,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_research/" class="md-nav__link">
+      <a href="../../06_research/" class="md-nav__link">
         
   
   
@@ -605,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_coding/" class="md-nav__link">
+      <a href="../../07_coding/" class="md-nav__link">
         
   
   
@@ -633,35 +637,10 @@
   
   
     
-      
-    
   
   
     <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Blog
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -677,8 +656,118 @@
   
 
       </a>
-      
-        
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/PranavShashidhara.png" alt="Pranav">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="../../TBD">Pranav</a>
+                        
+                      </strong>
+                      <br>
+                      TBD
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/gpsaggese.png" alt="Giacinto Paolo Saggese">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="https://gpsaggese.github.io/">Giacinto Paolo Saggese</a>
+                        
+                      </strong>
+                      <br>
+                      Adjunct Professor at University of Maryland
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-02-21 00:00:00+00:00" class="md-ellipsis">Saturday, February 21, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../category/AI-Research/">AI Research</a>, 
+                              <a href="../category/Software-Engineering/">Software Engineering</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+            
 
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
@@ -692,22 +781,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
+  <a href="#tensorflow_in_30_seconds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Blog
+        TensorFlow in 30 Seconds
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Blog">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official_references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Official References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial_content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tutorial Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tensorflowexampleipynb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tensorflow.example.ipynb
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="tensorflow.example.ipynb">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bambooai_in_60_minutes" class="md-nav__link">
+  <a href="#part_1_data_generation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        BambooAI in 60 Minutes
+        Part 1: Data Generation
       
     </span>
   </a>
@@ -715,10 +837,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#autogen_in_60_minutes" class="md-nav__link">
+  <a href="#part_2_model_building" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Autogen in 60 Minutes
+        Part 2: Model Building
       
     </span>
   </a>
@@ -726,54 +848,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tensorflow_in_60_minutes" class="md-nav__link">
+  <a href="#part_3_forecasting_and_evaluation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TensorFlow in 60 Minutes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#python_package_tools_in_30_mins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Package Tools in 30 mins
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uv_in_30_mins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UV in 30 mins
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ripgrep_in_30_mins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ripgrep in 30 mins
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#welcome_to_our_blog" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Welcome to Our Blog
+        Part 3: Forecasting and Evaluation
       
     </span>
   </a>
@@ -788,400 +866,133 @@
     </ul>
   
 </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
       
-    </li>
+        
   
 
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-          
-          
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">#</a></h2>
-<p>Welcome to our research blog! Here we share insights on AI research, machine learning,
-software engineering, and startup experiences.</p>
-<p>Browse through our latest posts below or use the categories to find specific
-topics of interest.</p>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/aver81.png" alt="Aver81">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-03-15 00:00:00+00:00">Sunday, March 15, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/AI-Research/" class="md-meta__link">AI Research</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="bambooai_in_60_minutes"><a class="toclink" href="bambooai-in-60-minutes/">BambooAI in 60 Minutes</a></h2>
-<p>TL;DR: Learn how to build intelligent data analysis systems with BambooAI in 60
-minutes with hands-on examples covering multi-agent workflows, dataframe
-analysis, and dynamic code generation.</p>
 
-    
-      <nav class="md-post__action">
-        <a href="bambooai-in-60-minutes/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/PranavShashidhara.png" alt="Pranav">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-21 00:00:00+00:00">Saturday, February 21, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/AI-Research/" class="md-meta__link">AI Research</a>, 
-              <a href="category/Software-Engineering/" class="md-meta__link">Software Engineering</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="autogen_in_60_minutes"><a class="toclink" href="autogen-in-60-minutes/">Autogen in 60 Minutes</a></h2>
-<p>TL;DR: Learn how to build agentic AI systems using AutoGen in 60 minutes with
-hands-on examples including live market data debates and SEC filing analysis.</p>
 
-    
-      <nav class="md-post__action">
-        <a href="autogen-in-60-minutes/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/PranavShashidhara.png" alt="Pranav">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-21 00:00:00+00:00">Saturday, February 21, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/AI-Research/" class="md-meta__link">AI Research</a>, 
-              <a href="category/Software-Engineering/" class="md-meta__link">Software Engineering</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="tensorflow_in_60_minutes"><a class="toclink" href="tensorflow-in-60-minutes/">TensorFlow in 60 Minutes</a></h2>
+
+  <h1>TensorFlow in 60 Minutes</h1>
+
 <p>TL;DR: Learn how to build machine learning models using TensorFlow in 60 minutes with
 hands-on examples including neural networks and structural time series
 forecasting.</p>
+<!-- more -->
 
-    
-      <nav class="md-post__action">
-        <a href="tensorflow-in-60-minutes/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/gpsaggese.png" alt="Giacinto Paolo Saggese">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-14 00:00:00+00:00">Saturday, February 14, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/Python/" class="md-meta__link">Python</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              6 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python_package_tools_in_30_mins"><a class="toclink" href="python-package-tools-in-30-mins/">Python Package Tools in 30 mins</a></h2>
-<p>TL;DR: A comprehensive guide to Python package managers and virtual environment
-tools, from built-in solutions like <code>pip</code> and <code>venv</code> to modern alternatives like
-<code>Poetry</code> and <code>uv</code>.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="python-package-tools-in-30-mins/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/gpsaggese.png" alt="Giacinto Paolo Saggese">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-14 00:00:00+00:00">Saturday, February 14, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/Python/" class="md-meta__link">Python</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              6 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="uv_in_30_mins"><a class="toclink" href="uv-in-30-mins/">UV in 30 mins</a></h2>
-<p>TL;DR <code>uv</code> is a blazingly fast Python package manager written in Rust that
-replaces <code>pip</code>, <code>pip-tools</code>, and <code>virtualenv</code> with a single tool that is 10-100x
-faster.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="uv-in-30-mins/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/gpsaggese.png" alt="Giacinto Paolo Saggese">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-10 00:00:00+00:00">Tuesday, February 10, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/Python/" class="md-meta__link">Python</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              4 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ripgrep_in_30_mins"><a class="toclink" href="ripgrep-in-30-mins/">Ripgrep in 30 mins</a></h2>
-<p>TL;DR <code>ripgrep</code> is a blazingly fast search tool that combines the usability and
-speed.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="ripgrep-in-30-mins/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/gpsaggese.png" alt="Giacinto Paolo Saggese">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-02-06 00:00:00+00:00">Friday, February 6, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/AI-Research/" class="md-meta__link">AI Research</a>, 
-              <a href="category/Software-Engineering/" class="md-meta__link">Software Engineering</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="welcome_to_our_blog"><a class="toclink" href="welcome-to-our-blog/">Welcome to Our Blog</a></h2>
-<p>TL;DR: Welcome to our new blog where we'll share insights on AI research,
-machine learning, software engineering, and our experiences in academia and
-industry.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="welcome-to-our-blog/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-      
-        
-          
+<p>This tutorial's goal is to show you in 60 minutes:</p>
+<ul>
+<li>The core APIs of TensorFlow (tensors, variables, automatic differentiation)</li>
+<li>How to build and train neural networks with Keras</li>
+<li>Probabilistic modeling with TensorFlow Probability distributions and
+    Bayesian inference</li>
+</ul>
+<h3 id="tensorflow_in_30_seconds">TensorFlow in 30 Seconds<a class="headerlink" href="#tensorflow_in_30_seconds" title="Permanent link">#</a></h3>
+<p>TensorFlow is an open-source machine learning framework from Google for building
+and training neural networks and probabilistic models.</p>
+<p>Key capabilities:</p>
+<ul>
+<li><strong>Tensors and automatic differentiation</strong>: Immutable multi-dimensional arrays
+  optimized for CPUs, GPUs, and TPUs with efficient gradient computation</li>
+<li><strong>Keras API</strong>: High-level interface for rapidly building and training neural
+  networks</li>
+<li><strong>TensorFlow Probability</strong>: Probabilistic programming for Bayesian inference
+  and uncertainty quantification</li>
+<li><strong>Interpretable models</strong>: Structural decomposition reveals which components
+  drive predictions</li>
+</ul>
+<h3 id="official_references">Official References<a class="headerlink" href="#official_references" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="https://www.tensorflow.org/">TensorFlow: An Open Source Machine Learning Framework</a></li>
+<li><a href="https://www.tensorflow.org/probability">TensorFlow Probability</a></li>
+</ul>
+<h3 id="tutorial_content">Tutorial Content<a class="headerlink" href="#tutorial_content" title="Permanent link">#</a></h3>
+<p>This tutorial includes all the code, notebooks, and Docker containers in
+<code>tutorials/tensorflow/</code>.</p>
+<ul>
+<li><code>tutorials/tensorflow/README.md</code>: Instructions and setup for the tutorial
+  environment</li>
+<li>A Docker system to build and run the environment using our standardized
+  approach</li>
+<li><code>tensorflow.API.ipynb</code>: Tutorial notebook focusing on core APIs and
+  fundamentals</li>
+<li><code>tensorflow.example.ipynb</code>: Advanced end-to-end structural time series
+  forecasting example</li>
+<li><code>tensorflow_utils.py</code>: Utility functions required by <code>tensorflow.example.ipynb</code></li>
+</ul>
+<h3 id="tensorflowexampleipynb"><code>tensorflow.example.ipynb</code><a class="headerlink" href="#tensorflowexampleipynb" title="Permanent link">#</a></h3>
+<p>This notebook provides a practical, end-to-end example of using TensorFlow
+Probability to demonstrate structural time series forecasting.</p>
+<h4 id="part_1_data_generation">Part 1: Data Generation<a class="headerlink" href="#part_1_data_generation" title="Permanent link">#</a></h4>
+<p>We generate a realistic synthetic daily time series that combines:
+- A linear trend (slow upward drift)
+- Weekly seasonality with stochastic drift
+- Holiday effects (additive spikes on Christmas each year)
+- AR(1) autoregression to capture temporal dependence
+- Gaussian observation noise </p>
+<h4 id="part_2_model_building">Part 2: Model Building<a class="headerlink" href="#part_2_model_building" title="Permanent link">#</a></h4>
+<p>The STS model decomposes the observed series into four interpretable components:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LocalLinearTrend</code></td>
+<td>Captures slow-moving level and slope</td>
+</tr>
+<tr>
+<td><code>Seasonal</code> (7 seasons)</td>
+<td>Weekly day-of-week effects</td>
+</tr>
+<tr>
+<td><code>Autoregressive</code> (AR-1)</td>
+<td>Short-term temporal dependence</td>
+</tr>
+<tr>
+<td><code>LinearRegression</code></td>
+<td>Additive holiday spikes</td>
+</tr>
+</tbody>
+</table>
+<p>The components are summed into a <code>tfp.sts.Sum</code> model.</p>
+<p><strong>Variational Inference</strong></p>
+<p>We approximate the posterior over model parameters using Variational Inference (VI):
+1. Define a factored surrogate posterior <code>q(θ)</code> (one Normal per parameter)
+2. Maximise the ELBO: <code>ELBO = E_q[log p(y, θ)] - KL(q || prior)</code>
+3. Use the Adam optimiser for gradient-based optimisation</p>
+<h4 id="part_3_forecasting_and_evaluation">Part 3: Forecasting and Evaluation<a class="headerlink" href="#part_3_forecasting_and_evaluation" title="Permanent link">#</a></h4>
+<p>With the fitted posterior we:
+1. Decompose the training signal into its constituent components
+2. Forecast <code>num_steps_forecast</code> steps into the future
+3. Evaluate using MAE and MSE</p>
 
 
 
-<nav class="md-pagination">
+
+
+
+
   
-</nav>
-        
+  
+
+
+
+
+  
+
+
+
       
-    </div>
+    </article>
   </div>
 
           
@@ -1262,12 +1073,12 @@ industry.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
