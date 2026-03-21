@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tensorflow_in_30_seconds" class="md-skip">
+        <a href="#tutorial_in_30_seconds" class="md-skip">
           Skip to content
         </a>
       
@@ -754,7 +754,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              2 min read
+                              1 min read
                             
                           </span>
                         </div>
@@ -781,10 +781,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tensorflow_in_30_seconds" class="md-nav__link">
+  <a href="#tutorial_in_30_seconds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TensorFlow in 30 Seconds
+        Tutorial in 30 Seconds
       
     </span>
   </a>
@@ -813,56 +813,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#tensorflowexampleipynb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tensorflow.example.ipynb
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="tensorflow.example.ipynb">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#part_1_data_generation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Part 1: Data Generation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#part_2_model_building" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Part 2: Model Building
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#part_3_forecasting_and_evaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Part 3: Forecasting and Evaluation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -880,21 +830,14 @@
 
   <h1>TensorFlow in 60 Minutes</h1>
 
-<p>TL;DR: Learn how to build machine learning models using TensorFlow in 60 minutes with
-hands-on examples including neural networks and structural time series
+<p>TL;DR: Learn how to build machine learning models using TensorFlow in 60 minutes
+with hands-on examples including neural networks and structural time series
 forecasting.</p>
 <!-- more -->
 
-<p>This tutorial's goal is to show you in 60 minutes:</p>
-<ul>
-<li>The core APIs of TensorFlow (tensors, variables, automatic differentiation)</li>
-<li>How to build and train neural networks with Keras</li>
-<li>Probabilistic modeling with TensorFlow Probability distributions and
-    Bayesian inference</li>
-</ul>
-<h3 id="tensorflow_in_30_seconds">TensorFlow in 30 Seconds<a class="headerlink" href="#tensorflow_in_30_seconds" title="Permanent link">#</a></h3>
-<p>TensorFlow is an open-source machine learning framework from Google for building
-and training neural networks and probabilistic models.</p>
+<h3 id="tutorial_in_30_seconds">Tutorial in 30 Seconds<a class="headerlink" href="#tutorial_in_30_seconds" title="Permanent link">#</a></h3>
+<p><strong>TensorFlow</strong> is an open-source machine learning framework from Google for
+building and training neural networks and probabilistic models.</p>
 <p>Key capabilities:</p>
 <ul>
 <li><strong>Tensors and automatic differentiation</strong>: Immutable multi-dimensional arrays
@@ -906,74 +849,40 @@ and training neural networks and probabilistic models.</p>
 <li><strong>Interpretable models</strong>: Structural decomposition reveals which components
   drive predictions</li>
 </ul>
+<p>This tutorial's goal is to show you in 60 minutes:</p>
+<ul>
+<li>The core APIs of TensorFlow (tensors, variables, automatic differentiation)</li>
+<li>How to build and train neural networks with Keras</li>
+<li>Probabilistic modeling with TensorFlow Probability distributions and
+  Bayesian inference</li>
+</ul>
 <h3 id="official_references">Official References<a class="headerlink" href="#official_references" title="Permanent link">#</a></h3>
 <ul>
 <li><a href="https://www.tensorflow.org/">TensorFlow: An Open Source Machine Learning Framework</a></li>
+<li><a href="https://github.com/tensorflow/tensorflow">GitHub repo</a></li>
 <li><a href="https://www.tensorflow.org/probability">TensorFlow Probability</a></li>
+<li><a href="https://github.com/tensorflow/probability">GitHub repo</a></li>
 </ul>
 <h3 id="tutorial_content">Tutorial Content<a class="headerlink" href="#tutorial_content" title="Permanent link">#</a></h3>
 <p>This tutorial includes all the code, notebooks, and Docker containers in
-<code>tutorials/tensorflow/</code>.</p>
+<a href="https://github.com/gpsaggese/umd_classes/tree/master/tutorials/tensorflow">tutorials/tensorflow</a></p>
 <ul>
-<li><code>tutorials/tensorflow/README.md</code>: Instructions and setup for the tutorial
-  environment</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/tensorflow/README.md"><code>README.md</code></a>: Instructions and setup for the
+  tutorial environment</li>
 <li>A Docker system to build and run the environment using our standardized
   approach</li>
-<li><code>tensorflow.API.ipynb</code>: Tutorial notebook focusing on core APIs and
-  fundamentals</li>
-<li><code>tensorflow.example.ipynb</code>: Advanced end-to-end structural time series
-  forecasting example</li>
-<li><code>tensorflow_utils.py</code>: Utility functions required by <code>tensorflow.example.ipynb</code></li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/tensorflow/tensorflow.API.ipynb"><code>tensorflow.API.ipynb</code></a>: Tutorial
+  notebook focusing on core APIs and fundamentals</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/tensorflow/tensorflow.example.ipynb"><code>tensorflow.example.ipynb</code></a>:
+  Advanced end-to-end structural time series forecasting example</li>
+<li>Data Generation: We generate a realistic synthetic daily time series that
+    combines:</li>
+<li>Model Building: We approximate the posterior over model parameters using
+    Variational Inference (VI)</li>
+<li>Forecasting and Evaluation</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/tensorflow/tensorflow_utils.py"><code>tensorflow_utils.py</code></a>: Utility
+  functions</li>
 </ul>
-<h3 id="tensorflowexampleipynb"><code>tensorflow.example.ipynb</code><a class="headerlink" href="#tensorflowexampleipynb" title="Permanent link">#</a></h3>
-<p>This notebook provides a practical, end-to-end example of using TensorFlow
-Probability to demonstrate structural time series forecasting.</p>
-<h4 id="part_1_data_generation">Part 1: Data Generation<a class="headerlink" href="#part_1_data_generation" title="Permanent link">#</a></h4>
-<p>We generate a realistic synthetic daily time series that combines:
-- A linear trend (slow upward drift)
-- Weekly seasonality with stochastic drift
-- Holiday effects (additive spikes on Christmas each year)
-- AR(1) autoregression to capture temporal dependence
-- Gaussian observation noise </p>
-<h4 id="part_2_model_building">Part 2: Model Building<a class="headerlink" href="#part_2_model_building" title="Permanent link">#</a></h4>
-<p>The STS model decomposes the observed series into four interpretable components:</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>LocalLinearTrend</code></td>
-<td>Captures slow-moving level and slope</td>
-</tr>
-<tr>
-<td><code>Seasonal</code> (7 seasons)</td>
-<td>Weekly day-of-week effects</td>
-</tr>
-<tr>
-<td><code>Autoregressive</code> (AR-1)</td>
-<td>Short-term temporal dependence</td>
-</tr>
-<tr>
-<td><code>LinearRegression</code></td>
-<td>Additive holiday spikes</td>
-</tr>
-</tbody>
-</table>
-<p>The components are summed into a <code>tfp.sts.Sum</code> model.</p>
-<p><strong>Variational Inference</strong></p>
-<p>We approximate the posterior over model parameters using Variational Inference (VI):
-1. Define a factored surrogate posterior <code>q(θ)</code> (one Normal per parameter)
-2. Maximise the ELBO: <code>ELBO = E_q[log p(y, θ)] - KL(q || prior)</code>
-3. Use the Adam optimiser for gradient-based optimisation</p>
-<h4 id="part_3_forecasting_and_evaluation">Part 3: Forecasting and Evaluation<a class="headerlink" href="#part_3_forecasting_and_evaluation" title="Permanent link">#</a></h4>
-<p>With the fitted posterior we:
-1. Decompose the training signal into its constituent components
-2. Forecast <code>num_steps_forecast</code> steps into the future
-3. Evaluate using MAE and MSE</p>
 
 
 

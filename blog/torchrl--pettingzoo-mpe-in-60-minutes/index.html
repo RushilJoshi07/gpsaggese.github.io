@@ -12,11 +12,13 @@
         <meta name="author" content="Giacinto Paolo Saggese">
       
       
-        <link rel="canonical" href="https://gpsaggese.github.io/blog/bambooai-in-60-minutes/">
+        <link rel="canonical" href="https://gpsaggese.github.io/blog/torchrl--pettingzoo-mpe-in-60-minutes/">
       
       
-        <link rel="prev" href="../torchrl--pettingzoo-mpe-in-60-minutes/">
+        <link rel="prev" href="../autogen-in-60-minutes/">
       
+      
+        <link rel="next" href="../bambooai-in-60-minutes/">
       
       
         
@@ -27,7 +29,7 @@
     
     
       
-        <title>BambooAI in 60 Minutes - GP's AI Research</title>
+        <title>TorchRL + PettingZoo MPE in 60 Minutes - GP's AI Research</title>
       
     
     
@@ -86,16 +88,16 @@
   
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BambooAI in 60 Minutes">
+  <meta property="og:title" content="TorchRL + PettingZoo MPE in 60 Minutes">
   <meta property="og:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
-  <meta property="og:url" content="https://gpsaggese.github.io/blog/bambooai-in-60-minutes/">
+  <meta property="og:url" content="https://gpsaggese.github.io/blog/torchrl--pettingzoo-mpe-in-60-minutes/">
   <meta property="og:type" content="website">
 
   
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BambooAI in 60 Minutes">
+  <meta name="twitter:title" content="TorchRL + PettingZoo MPE in 60 Minutes">
   <meta name="twitter:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
   
 
@@ -153,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BambooAI in 60 Minutes
+              TorchRL + PettingZoo MPE in 60 Minutes
             
           </span>
         </div>
@@ -687,12 +689,42 @@
                 
                   <div class="md-profile md-post__profile">
                     <span class="md-author md-author--long">
-                      <img src="https://github.com/aver81.png" alt="Aver81">
+                      <img src="https://github.com/SaranshKumar.png" alt="Saransh Kumar">
                     </span>
                     <span class="md-profile__description">
                       <strong>
                         
-                          <a href="../../TBD">Aver81</a>
+                          <a href="../../TBD">Saransh Kumar</a>
+                        
+                      </strong>
+                      <br>
+                      TBD
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/AbhinavSingh.png" alt="Abhinav Singh">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="../../TBD">Abhinav Singh</a>
+                        
+                      </strong>
+                      <br>
+                      TBD
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/AyushGaur.png" alt="Ayush Gaur">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="../../TBD">Ayush Gaur</a>
                         
                       </strong>
                       <br>
@@ -729,7 +761,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-03-15 00:00:00+00:00" class="md-ellipsis">Sunday, March 15, 2026</time>
+                        <time datetime="2026-03-03 00:00:00+00:00" class="md-ellipsis">Tuesday, March 3, 2026</time>
                       </div>
                     </li>
                     
@@ -741,6 +773,7 @@
                             in
                             
                               <a href="../category/AI-Research/">AI Research</a>, 
+                              <a href="../category/Machine-Learning/">Machine Learning</a>, 
                               <a href="../category/Software-Engineering/">Software Engineering</a></span>
                         </div>
                       </li>
@@ -790,6 +823,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the_problem_with_most_marl_tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem with Most MARL Tutorials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#official_references" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -826,61 +870,85 @@
 
 
 
-  <h1>BambooAI in 60 Minutes</h1>
+  <h1>TorchRL + PettingZoo MPE in 60 Minutes</h1>
 
-<p>TL;DR: Learn how to build intelligent data analysis systems with BambooAI in 60
-minutes with hands-on examples covering multi-agent workflows, dataframe
-analysis, and dynamic code generation.</p>
+<p>TL;DR: Build a reproducible multi-agent reinforcement learning (MARL) pipeline
+using TorchRL and PettingZoo's multi-agent particle environment (MPE), train
+using centralized training, decentralized execution (CTDE), and verify that
+communication is meaningful using structured diagnostics and causal ablations.</p>
 <!-- more -->
 
 <h3 id="tutorial_in_30_seconds">Tutorial in 30 Seconds<a class="headerlink" href="#tutorial_in_30_seconds" title="Permanent link">#</a></h3>
-<p>BambooAI is a flexible framework for building intelligent systems made of
-multiple collaborating LLM agents that can reason over data and execute code.</p>
+<p>TorchRL + PettingZoo MPE is a powerful stack for building and verifying
+multi-agent reinforcement learning systems with measurable coordination.</p>
 <p>Key capabilities:</p>
 <ul>
-<li><strong>Multi-agent orchestration</strong>: Expert Selector, Code Generator, Error
-  Corrector, and other specialized agents working together</li>
-<li><strong>Data-aware reasoning</strong>: Dataframe Inspector and Analyst agents that
-  understand and explore tabular data</li>
-<li><strong>Dynamic code generation and execution</strong>: Planner and Code Generator agents
-  that create and run Python code</li>
-<li><strong>Multi-provider support</strong>: Works with OpenAI, Anthropic Claude, Google
-  Gemini, Mistral, DeepSeek, and more</li>
-<li><strong>Extensible architecture</strong>: Easy to add custom agents and integrate with
-  external tools like Google Search</li>
+<li><strong>Multi-agent environment integration</strong>: Clean API for wiring PettingZoo
+  environments with TorchRL's PyTorch-native RL pipeline</li>
+<li><strong>Centralized training, decentralized execution (CTDE)</strong>: Stable training with
+  decentralized per-agent actors and a centralized critic</li>
+<li><strong>Communication verification</strong>: Structured diagnostics including message
+  entropy, message change rate, and observation-derived verification checks</li>
+<li><strong>Causal ablations</strong>: Built-in support for testing communication importance
+  through full communication, disabled communication, and random communication
+  modes</li>
+<li><strong>Outcome-aligned evaluation</strong>: Binary success rates, goal-distance debugging,
+  and structured communication metrics</li>
 </ul>
 <p>This tutorial's goal is to show you in 60 minutes:</p>
 <ul>
-<li>The basic API of BambooAI (a framework for building multi-agent AI systems
-  that can reason over data)</li>
-<li>Concrete examples of using BambooAI to build specialized agents that analyze
-  dataframes, generate code, and execute complex workflows</li>
+<li>The core architecture for building MARL systems with TorchRL and PettingZoo</li>
+<li>How to set up CTDE training with centralized critics and decentralized actors</li>
+<li>How to verify coordination and communication meaning through structured
+  diagnostics and causal ablations</li>
+<li>Why training curves alone are not sufficient proof of cooperation</li>
 </ul>
+<h3 id="the_problem_with_most_marl_tutorials">The Problem with Most MARL Tutorials<a class="headerlink" href="#the_problem_with_most_marl_tutorials" title="Permanent link">#</a></h3>
+<p>Most multi-agent reinforcement learning tutorials show:</p>
+<ul>
+<li>Moving loss curves</li>
+<li>Increasing rewards</li>
+<li>"Healthy-looking" training</li>
+</ul>
+<p>But they rarely verify:</p>
+<ul>
+<li>Whether agents truly coordinate</li>
+<li>Whether communication carries useful information</li>
+<li>Whether evaluation-time success improves</li>
+</ul>
+<p>In multi-agent RL, training curves are not proof of cooperation. This tutorial
+focuses on measurable coordination.</p>
 <h3 id="official_references">Official References<a class="headerlink" href="#official_references" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="https://github.com/bamboo-ai/bamboo">BambooAI GitHub Repository</a></li>
-<li><a href="https://bamboo-ai.github.io/">BambooAI Documentation</a></li>
+<li><a href="https://github.com/pytorch/rl">TorchRL: A PyTorch Reinforcement Learning Library</a></li>
+<li><a href="https://pettingzoo.farama.org/">PettingZoo: Parallel Multi-Agent Environment Library</a></li>
+<li><a href="https://pettingzoo.farama.org/environments/mpe/">Multi-Agent Particle Environment (MPE)</a></li>
 </ul>
 <h3 id="tutorial_content">Tutorial Content<a class="headerlink" href="#tutorial_content" title="Permanent link">#</a></h3>
 <p>This tutorial includes all the code, notebooks, and Docker containers in
-<a href="https://github.com/gpsaggese/umd_classes/tree/master/tutorials/BambooAI">tutorials/BambooAI</a></p>
+<a href="https://github.com/gpsaggese/umd_classes/tree/master/tutorials/TorchRL_Multi_Agent_Cooperation">tutorials/TorchRL_Multi_Agent_Cooperation</a></p>
 <ul>
-<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/BambooAI/README.md"><code>README.md</code></a>: Instructions and setup for the tutorial environment</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/TorchRL_Multi_Agent_Cooperation/README.md"><code>README.md</code></a>:
+  Instructions and setup for the tutorial environment</li>
 <li>A Docker system to build and run the environment using our standardized
   approach</li>
-<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/BambooAI/bambooai.API.ipynb"><code>bambooai.API.ipynb</code></a>: Tutorial notebook focusing on fundamental classes,
-  methods, and API configurations</li>
-<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/BambooAI/bambooai.example.ipynb"><code>bambooai.example.ipynb</code></a>: Complete real-world application workflow using BambooAI</li>
-<li>Data exploration: Using Dataframe Inspector and Analyst agents to
-    understand your data</li>
-<li>Dynamic planning: Planner agent that decomposes complex analysis tasks
-    into steps</li>
-<li>Code generation: Code Generator agent that writes and proposes solutions</li>
-<li>Error handling: Error Corrector agent that fixes and improves generated
-    code</li>
-<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/BambooAI/bambooai.example.py"><code>bambooai.example.py</code></a>: Stand-alone script version of the example for quick
-  reference or automation</li>
-<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/BambooAI/bambooai_utils.py"><code>bambooai_utils.py</code></a>: Utility functions required by the example notebooks</li>
+<li>Environment and wrapper components:</li>
+<li>PettingZoo MPE task wrappers (e.g., <code>simple_reference</code>)</li>
+<li>TorchRL-compatible wrappers</li>
+<li>Explicit message-channel wiring</li>
+<li>CTDE Training setup:</li>
+<li>Decentralized per-agent actors</li>
+<li>Centralized critic</li>
+<li>Stable policy optimization</li>
+<li>Evaluation and diagnostics:</li>
+<li>Binary success rate metrics</li>
+<li>Goal-distance debugging</li>
+<li>Structured communication metrics including <code>message_entropy</code> and
+    <code>message_change_rate</code></li>
+<li>Causal ablations:</li>
+<li><code>full_comm</code>: Standard communication enabled</li>
+<li><code>disable_comm</code>: Communication disabled</li>
+<li><code>random_comm</code>: Random communication</li>
 </ul>
 
 

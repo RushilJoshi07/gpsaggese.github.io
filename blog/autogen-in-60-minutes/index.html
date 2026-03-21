@@ -18,7 +18,7 @@
         <link rel="prev" href="../tensorflow-in-60-minutes/">
       
       
-        <link rel="next" href="../bambooai-in-60-minutes/">
+        <link rel="next" href="../torchrl--pettingzoo-mpe-in-60-minutes/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Autogen in 60 Minutes - GP's AI Research</title>
+        <title>AutoGen in 60 Minutes - GP's AI Research</title>
       
     
     
@@ -88,7 +88,7 @@
   
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Autogen in 60 Minutes">
+  <meta property="og:title" content="AutoGen in 60 Minutes">
   <meta property="og:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
   <meta property="og:url" content="https://gpsaggese.github.io/blog/autogen-in-60-minutes/">
   <meta property="og:type" content="website">
@@ -97,7 +97,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Autogen in 60 Minutes">
+  <meta name="twitter:title" content="AutoGen in 60 Minutes">
   <meta name="twitter:description" content="Personal website of GP Saggese - Startup Boy and AI Researcher">
   
 
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autogen_in_30_seconds" class="md-skip">
+        <a href="#tutorial_in_30_seconds" class="md-skip">
           Skip to content
         </a>
       
@@ -155,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Autogen in 60 Minutes
+              AutoGen in 60 Minutes
             
           </span>
         </div>
@@ -781,10 +781,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#autogen_in_30_seconds" class="md-nav__link">
+  <a href="#tutorial_in_30_seconds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AutoGen in 30 Seconds
+        Tutorial in 30 Seconds
       
     </span>
   </a>
@@ -813,45 +813,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example_notebooks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Notebooks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example Notebooks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#part_1_dynamic_market_debate_and_live_data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Part 1: Dynamic Market Debate and Live Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#part_2_sec_filings_and_quantitative_rag_analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Part 2: SEC Filings and Quantitative RAG Analysis
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -867,20 +828,13 @@
 
 
 
-  <h1>Autogen in 60 Minutes</h1>
+  <h1>AutoGen in 60 Minutes</h1>
 
 <p>TL;DR: Learn how to build agentic AI systems using AutoGen in 60 minutes with
 hands-on examples including live market data debates and SEC filing analysis.</p>
 <!-- more -->
 
-<p>This tutorial's goal is to show you in 60 minutes:</p>
-<ul>
-<li>The basic API of AutoGen (an open-source framework for building agentic AI
-    systems)</li>
-<li>Concrete examples of using AutoGen to build agents that can debate and reason
-    investment strategies based on market data and SEC filings</li>
-</ul>
-<h3 id="autogen_in_30_seconds">AutoGen in 30 Seconds<a class="headerlink" href="#autogen_in_30_seconds" title="Permanent link">#</a></h3>
+<h3 id="tutorial_in_30_seconds">Tutorial in 30 Seconds<a class="headerlink" href="#tutorial_in_30_seconds" title="Permanent link">#</a></h3>
 <p>AutoGen is an open-source framework from Microsoft for building agentic AI
 systems made of multiple collaborating agents.</p>
 <p>Key capabilities:</p>
@@ -894,45 +848,40 @@ systems made of multiple collaborating agents.</p>
 <li><strong>Rapid prototyping</strong>: Helps developers quickly build applications from simple
   assistants to coordinated teams of specialized AI agents</li>
 </ul>
+<p>This tutorial's goal is to show you in 60 minutes:</p>
+<ul>
+<li>The basic API of AutoGen (an open-source framework for building agentic AI
+  systems)</li>
+<li>Concrete examples of using AutoGen to build agents that can debate and reason
+  investment strategies based on market data and SEC filings</li>
+</ul>
 <h3 id="official_references">Official References<a class="headerlink" href="#official_references" title="Permanent link">#</a></h3>
 <ul>
 <li><a href="https://microsoft.github.io/autogen/">AutoGen: A framework for building AI agents and applications</a></li>
 <li><a href="https://github.com/microsoft/autogen">GitHub repo</a></li>
 </ul>
 <h3 id="tutorial_content">Tutorial Content<a class="headerlink" href="#tutorial_content" title="Permanent link">#</a></h3>
-<p>This tutorial includes all the code, notebooks, and Docker containers in the
-<code>tutorials/Autogen/</code> directory of the repository.</p>
+<p>This tutorial includes all the code, notebooks, and Docker containers in
+<a href="https://github.com/gpsaggese/umd_classes/tree/master/tutorials/Autogen">tutorials/Autogen</a></p>
 <ul>
-<li><strong>README.md</strong>: Instructions and setup for the tutorial environment</li>
-<li>A Docker system to build and run the environment using our standardized approach</li>
-<li><strong>autogen.API.ipynb</strong>: Tutorial notebook focusing on API configurations and basic agent setup</li>
-<li><strong>autogen.example1.ipynb</strong>: Advanced end-to-end agentic workflow example Part 1</li>
-<li><strong>autogen.example2.ipynb</strong>: Advanced end-to-end agentic workflow example Part 2</li>
-<li><strong>autogen_utils.py</strong>: Utility functions required by the example notebooks</li>
-</ul>
-<h3 id="example_notebooks">Example Notebooks<a class="headerlink" href="#example_notebooks" title="Permanent link">#</a></h3>
-<p>Each notebook contains two end-to-end practical examples, as shown below.</p>
-<h4 id="part_1_dynamic_market_debate_and_live_data">Part 1: Dynamic Market Debate and Live Data<a class="headerlink" href="#part_1_dynamic_market_debate_and_live_data" title="Permanent link">#</a></h4>
-<ul>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/Autogen/README.md"><code>README.md</code></a>: Instructions and setup for the tutorial environment</li>
+<li>A Docker system to build and run the environment using our standardized
+  approach</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/Autogen/autogen.API.ipynb"><code>autogen.API.ipynb</code></a>: Tutorial notebook focusing on API configurations and basic agent setup</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/Autogen/autogen.example1.ipynb"><code>autogen.example1.ipynb</code></a>: Advanced end-to-end agentic workflow example Part 1</li>
 <li>Fetches real-time stock data from Yahoo Finance</li>
 <li>Bull and Bear strategist agents debate market trends</li>
 <li>Selector agent dynamically decides which expert to call at each step</li>
 <li>Generates stock charts and financial summaries</li>
-</ul>
-<h4 id="part_2_sec_filings_and_quantitative_rag_analysis">Part 2: SEC Filings and Quantitative RAG Analysis<a class="headerlink" href="#part_2_sec_filings_and_quantitative_rag_analysis" title="Permanent link">#</a></h4>
-<p>Part 2 extends Part 1 by combining live market data with deep, structured
-analysis of SEC filings.</p>
-<ul>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/Autogen/autogen.example2.ipynb"><code>autogen.example2.ipynb</code></a>: Advanced end-to-end agentic workflow example Part 2</li>
 <li>Pulls 10-K filings from SEC EDGAR and cleans them</li>
 <li>Embeds documents into a <strong>ChromaDB</strong> vector database</li>
 <li>Senior Quant Analyst agent queries the database to extract revenue splits,
-  risk factors, and other insights</li>
+    risk factors, and other insights</li>
 <li>Quant Runtime agent executes Python code locally to transform raw tables into
-  structured visualizations</li>
+    structured visualizations</li>
+<li><a href="https://github.com/gpsaggese/umd_classes/blob/master/tutorials/Autogen/autogen_utils.py"><code>autogen_utils.py</code></a>: Utility functions required by the example notebooks</li>
 </ul>
-<p>This example shows how multiple agents collaborate, use live data, leverage
-private databases via RAG, and produce actionable insights in a single
-integrated workflow.</p>
 
 
 
